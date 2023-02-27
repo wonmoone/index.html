@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+
+    <style>
+
+      *{margin:0; box-sizing:border-box;}
+      ul, li, ol{list-style:none; margin:0; padding:0;}
+    /*헤더*/
+    .box3{width: 100%; height: 785px; margin: 0 auto;  background-image:url("img/img_main.jpg"); background-size: cover;}
+   
+    .box3 >header{width:100%; height:85px;  background-color: rgba(255, 252, 235, 0.9);} 
+
+      
+
+    .box3 >#hdimg > #box{width: 100%; height:675px; margin:0 auto;}
+
+    .box3 >#hdimg > #box >#newbox{width:560px; height:700px; float: right; background-color: #fafafa; }
+    .box3 >#hdimg >  #box >#newbox >h1{font-size:19px; margin:180px 0 0 50px; }
+    .box3 >#hdimg > #box > #newbox >h2{font-size:42px; padding:15px;  margin:0 0 0 30px;}
+    .box3 > #hdimg >  #box >#newbox >p{font-size:14px; color:#727272; margin:0 0 0 43px; }
+    .box3 >#hdimg >  #box >#newbox >.btn{margin:20px 0 0 43px; background-color:#ede1c2; padding: 12px 42px; font-size:14px; border:0; transition:0.1s;}
+    .box3 >#hdimg > #box > #newbox >.btn:hover{background-color: #5a7058; color: #ffffff; cursor: pointer;}
+
+
+
+    /*로고*/
+      #logo{width:140px; height:65px; margin:15px 0 0 30px; float:left;}
+      #logo > img{width:100%; height:100%; background-size:cover;}
+
+        /*메뉴바*/
+      #store{width:850px; height:20px; margin:32px 0 0 0px; float:left;}
+      #store >ul >li{float:left;}
+      #store >ul >li >a{text-decoration:none; color:#000; font-size:15px; font-weight:bold; margin:0 0 0 22px;}
+      #store >ul >li >a:hover{color:gray;}
+
+
+    /*로그인*/
+      #menu{width:40px; height:40px; float:right; margin:25px 35px 0 0px; border:2px solid #000;}
+      #menu >a >img{width:23px; height:23px; margin:6px 0 0 6px;}
+
+      #login{width:220px; height:20px; margin:33px 0 0 0px; float:right;}
+      #login >ul >li{float:left;}
+      #login >ul >li >a{text-decoration:none; color:#000; font-size:15px; font-weight:bold; margin:0 0 0 30px;}
+      #login >ul >li >a:hover{color:gray;}
+
+
+
+
+ /*뉴섹션*/
+    #product{width: 1300px; height: 1200px; margin: 0 auto; } 
+    #product > #new{width: 1260px; height: 190px; margin:0 auto;}
+    #product > #new > center>h5 {font-size:22px; padding: 98px; font-weight:bold;}
+    #product >.box{width: 295px; height: 500px;  float: left; background-color:#ffffff;}
+    #product >.box >a >img{width: 100%; height:280px;}
+    #product > .box > h4{text-decoration:none; color:#625f5f; font-size:14px; padding:10px 0 0 0px; display:block; line-height: 190%; font-style: ;}
+    #product > .box >h3{color:#d82e2e; font-size:15px;}
+    #product > .box > h5{text-decoration:line-through; color:#625f5f; font-size:14px; padding:5px 0 0 0px;}
+    #product > .box > p{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+    #product > .box > p::after{content:"25%"; font-size:16px; color:#d82e2e; font-weight: bold; width:30px; padding:5px 7px; }
+    #product > .box >h6{font-size:14px; color:#625f5f; margin:10px 0 0 2px;}
+    #product > .box >h6 >.red{color:#f75e5e; font-size:14px;}
+
+    #product> .box{margin:0 16px 20px 14px;}
+
+        /*첫번째 슬라이드*/
+      #slider{width:1260px; height:580px; margin:0 auto;}
+      #slider >a >img{width:230px; height: 250px; float: none; margin: 88px 0 0 480px; }
+      #slider >h1{font-size: 25px; font-weight: bold; padding:9px;}
+      #slider >h3{font-size: 13px; line-height: 220%; color: #727272;}
+
+
+      
+        /*두번째 슬라이드*/
+      #slider2{width:1260px; height:1300px; margin:0 auto;}
+      #slider2 >#left{width:630px; height:620px; float: left;}
+      #slider2 >#left >img{width:100%; height:100%;}
+
+      #slider2 >#right{width:630px; height:620px; float: right; background-color:#f8f8f8}
+      #slider2 >#right >h1{font-size: 25px; font-weight: bold; padding:20px; float:right; margin:120px 228px 0 0px;}
+      #slider2 >#right >h3{font-size: 13px; font-weight: bold; line-height: 220%; color: #747474; float:right; margin:0 120px 0 0px;}
+      #slider2 >#right >p >a{font-size: 14px; font-weight: bold; padding:11px; float:right; color:#000; margin:0 442px 0 0px;}
+
+
+      #slider2 >#left1{width:630px; height:620px; float: left; background-color:#f8f8f8}
+      #slider2 >#left1 >h1{font-size: 25px; font-weight: bold; padding:20px; float:right; margin:120px 280px 0 0px;}
+      #slider2 >#left1 >h3{font-size: 13px; font-weight: bold; line-height: 220%; color: #747474; float:right; margin:0 135px 0 0px;}
+      #slider2 >#left1 >p >a{font-size: 14px; font-weight: bold; padding:9px; float:right; color:#000; margin:0 438px 0 0px;}
+
+
+      
+      #slider2 >#right1{width:630px; height:620px; float: right; background-color:hwb(18 39% 5%);}
+      #slider2 >#right1 >img{width:100%; height:100%;}
+
+      
+
+        /*섹션*/
+      section{width: 1300px; height: 2900px; margin: 0 auto; } 
+      section > #best{width: 1260px; height: 190px; margin:0 auto;}
+      section > #best > center>h5 {font-size:22px; padding: 98px; font-weight:bold;}
+      section >.box{width: 295px; height: 500px;  float: left; background-color:#ffffff;}
+      section >.box >a >img{width: 100%; height:280px;}
+      section> .box > h4{text-decoration:none; color:#625f5f; font-size:14px; padding:10px 0 0 0px; display:block; line-height: 190%; font-style: ;}
+      section> .box >h3{color:#d82e2e; font-size:15px;}
+      section> .box > h5{text-decoration:line-through; color:#625f5f; font-size:14px; padding:5px 0 0 0px;}
+      section> .box > p{text-decoration:none; color:#000000; font-size:23px; font-weight: bold; padding:10px 0 0 0px; display:block;}
+      section> .box > p::after{content:"25%"; font-size:16px; color:#d82e2e; font-weight: bold; width:30px; padding:5px 7px; }
+      section> .box >h6{font-size:14px; color:#625f5f; margin:10px 0 0 2px;}
+      section> .box >h6 >.red{color:#f75e5e; font-size:14px;}
+
+      section> .box{margin:0 16px 20px 14px;}
+
+
+      /*하단*/
+      footer{width: 100%; height:555px; background-color: #f8f6f6;} 
+      footer >.box {margin:0 auto; width: 1260px; height:555px;}
+
+      footer >.box >h1{font-weight:bold; padding: 45px; width:280px; height: 35px; font-size: 20px; color: #000; text-decoration: none;}
+      footer >.box >h3{margin: 20px 0 0 45px; width:700px; height: 85px; font-size: 20px; color: #000; text-decoration: none;}
+      footer >.box >h3 >ul >li{font-size: 12px; color: hsl(0, 4%, 22%); float: left; margin:0 20px 0 0px; line-height: 20px;}
+      footer >.box >.box1{width:260px; height:160px; float:left; margin: 20px 35px 0 20px; }
+      footer >.box >.box1 >h5{margin: 0 0 0 30px; font-size:15px; font-weight:bold; line-height:30px; }
+      footer >.box >.box1 >ul >li{margin: 0 0 0 30px; font-size: 12px; color: hsl(0, 4%, 22%); line-height: 23px; font-weight: bold;}
+      footer >.box >#box{width: 1260px; height: 180px; float: left; }
+      
+      footer >.box >#box >ul >li >a{float:left; color: hsl(0, 4%, 22%); font-size: 12px;  text-decoration: none; margin:30px 0 0 55px; font-weight: bold;}
+      footer >.box >#box >h1{color: hsl(0, 0%, 77%); font-size: 12px; margin:30px 0 0 0px;}
+      footer >.box >#box >#b >a > img{width: 43px; height: 18px; float: right; margin:0 0 0 15px;}
+      footer >.box >#box >#i >a > img{width: 10px; height: 20px; float: right; margin:0 15px 0 15px;}
+      footer >.box >#box >#f >a > img{width: 20px; height: 20px; float: right; }
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="box3">
+        
+       
+    <header>
+        
+
+
+        
+  
+          <div id=logo>
+            <a href="#"><img src="img/img_logo.jpg" alt="로고이미지"></a>
+          </div>
+  
+  
+  
+          <div id=store>
+            <ul>
+              <li><a href="#">편백수 원액</a></li>
+              <li><a href="#">계피 원액</a></li>
+              <li><a href="#">천연정화석</a></li>
+              <li><a href="#">선물 & 패키지</a></li>
+              <li><a href="#">용도별 탈취용품</a></li>
+              <li><a href="#">베스트상품</a></li>
+              <li><a href="#">제휴/대량구매</a></li>
+              <li><a href="#">회사소개</a></li>
+            </ul>
+          </div>
+  
+  
+          <div id="menu">
+            <a href="#"><img src="img/img_menu.png" alt="메뉴이미지"></a>
+          </div>
+  
+  
+  
+          <div id=login>
+            <ul>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">JOIN</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </div>
+        </header>
+        
+        <div id="hdimg">
+            <div id="box">
+            
+                  
+                  <div id="newbox">
+                    <h1>NEW ARRIVAL</h1>
+                    <h2>맑고맑은<br>계피원액 스프레이</h2>
+                    <p>건강하고 안전하게 자연의 힘으로 벌레 퇴치와 탈취를 한번에 해결 하세요.</p>
+                    <button class="btn">SHOP NOW</button>
+                  </div>
+              </div>
+              </div>
+           
+
+    </div>
+
+
+       
+
+        
+  
+  
+  
+     <div id="product">
+        <div id="new">
+            <center><h5>신상제품</h5></center>
+         </div>
+         
+         <div class="box">
+             <a href="#"><img src="img/img4.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+             <h4>안전하고 건강한 벌레 기피제 계피원액 <br>스프레이 안전성O,유해성분X</h4>
+             <h5>22,900</h5>
+             <p>14,900</p>
+             <h6>리뷰 : <span class="red">1,369</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img8.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>천연 우드칩 무화과향 사쉐 옷장 방향제<br>
+                 세트 최대 40% 할인</h4>
+                 <h5>22,700</h5>
+             <p>4,900</p>
+             <h6>리뷰 : <span class="red">163</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img2.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>온다숲 피톤치드 편백수 스프레이 A세트</h4>
+             <h5>13,900</h5>
+             <p>25,900</p>
+             <h6>리뷰 : <span class="red">589</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img1.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>천연 정화석으로 만든 천연 습기제거제 <br>5개 set<br>
+                 제습,탈취 한번에!/작은 공간도 부담없이!</h4>
+                 <h5>52,900</h5>
+             <p>3,900</p>
+             <h6>리뷰 : <span class="red">1,589</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img3.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>더욱 강력한 새집증후군+베이크아웃 패키지<br>
+                 (집들이선물 HIT)</h4>
+                 <h5>22,900</h5>
+             <p>69,900</p>
+             <h6>리뷰 : <span class="red">59</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img7.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>[국내산] 편백나무원액 100% 피톤치드 편백수<br> 스프레이 500ml(다목적 탈취제)</h4>
+             <h5>13,900</h5>
+             <p>14,900 </p>
+             <h6>리뷰 : <span class="red">2,374</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img6.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>[국내산] 안전하고 건강한 벌레 기피제 잎피톤치드<br> 스프레이 500ml 안전성O,유해성분X</h4>
+             <h5>22,900</h5>
+             <p>16,900</p>
+             <h6>리뷰 : <span class="red">374</span></h6>
+         </div>
+ 
+         <div class="box">
+             <a href="#"><img src="img/img5.jpg" alt="상품이미지"></a>
+             <h3>NEW</h3>
+             <h4>천연 정화석으로 만든 냉장고 탈취제 3개 set<br>
+                 냉장,냉동고 냄새 건강하게 없애기</h4>
+                 <h5>13,900</h5>
+             <p>9,990</p>
+             <h6>리뷰 : <span class="red">1,384</span></h6>
+         </div>
+        </div>
+
+     
+
+
+
+
+    <div id="slider">
+        <a href="#"><img src="img/img_slider.jpg" alt="첫번째 슬라이드"></a>
+        <h1><center>Natural Products</center></h1>
+        <h3><center>(주)온다숲<br>
+            산+언덕+물+바람이 이루는 숲의 이름과 같이 자연을 토대로 여러분의 쾌적한 공간과<br>
+            건강한 생활을 위해 노력하는 "숲이 내게로 온다. 온다숲" 입니다.</center></h3>
+    </div>
+
+
+    <div id="slider2">
+
+        <div id="left">
+        <img src="img/img_slider2(1).gif" alt="두번째 슬라이드"></div>
+
+        <div id="right">
+            <h1>국내산 100% 천연정화석</h1>
+            <h3>자연 그대로 놓아만 두세요.<br>
+                천연광물질의 자연 돌맹이가 스스로 쾌적한 실내공간을 만들어줍니다.<br>
+                건강한 삶은 좋은 제품에서부터 시작합니다.</h3>
+                <p><a href="#">View More</a></p>
+            </div>
+
+        <div id="left1">
+            <h1>100% 편백오일원액</h1>
+            <h3>어떤것도 넣지 않았습니다.<br>
+                어떤것도 빼지 않았습니다.<br>
+                편백나무 숲에 온것처럼 진한 편백의 향을 느낄 수 있는 진한 오일.<br>
+                 스트레스와 불안감등이 밀려오거나 상쾌한 느낌을 받고 싶다면<br> 이제 온다숲 할때입니다.</h3>
+                <p><a href="#">View More</a></p>
+        </div>
+
+        
+
+        <div id="right1"><img src="img/img_slider2.gif" alt="두번째 슬라이드"></div>
+
+    </div>
+
+    
+
+
+    <section>
+        <div id="best">
+           <center><h5>베스트상품</h5></center>
+        </div>
+        
+        <div class="box">
+            <a href="#"><img src="img/img8.jpg" alt="상품이미지"></a>
+           <h3>NEW</h3>
+            <h4>안전하고 건강한 벌레 기피제 계피원액 <br>스프레이 안전성O,유해성분X</h4>
+            <h5>22,900</h5>
+            <p>14,900</p>
+            <h6>리뷰 : <span class="red">1,369</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img9.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>천연 우드칩 무화과향 사쉐 옷장 방향제<br>
+                세트 최대 40% 할인</h4>
+                <h5>22,700</h5>
+            <p>4,900</p>
+            <h6>리뷰 : <span class="red">163</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img10.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>온다숲 피톤치드 편백수 스프레이 A세트</h4>
+            <h5>13,900</h5>
+            <p>25,900</p>
+            <h6>리뷰 : <span class="red">589</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img11.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>천연 정화석으로 만든 천연 습기제거제 <br>5개 set<br>
+                제습,탈취 한번에!/작은 공간도 부담없이!</h4>
+                <h5>52,900</h5>
+            <p>3,900</p>
+            <h6>리뷰 : <span class="red">1,589</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img12.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>더욱 강력한 새집증후군+베이크아웃 패키지<br>
+                (집들이선물 HIT)</h4>
+                <h5>22,900</h5>
+            <p>69,900</p>
+            <h6>리뷰 : <span class="red">59</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img13.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>[국내산] 편백나무원액 100% 피톤치드 편백수<br> 스프레이 500ml(다목적 탈취제)</h4>
+            <h5>13,900</h5>
+            <p>14,900 </p>
+            <h6>리뷰 : <span class="red">2,374</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img14.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>[국내산] 안전하고 건강한 벌레 기피제 잎피톤치드<br> 스프레이 500ml 안전성O,유해성분X</h4>
+            <h5>22,900</h5>
+            <p>16,900</p>
+            <h6>리뷰 : <span class="red">374</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img3.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>천연 정화석으로 만든 냉장고 탈취제 3개 set<br>
+                냉장,냉동고 냄새 건강하게 없애기</h4>
+                <h5>13,900</h5>
+            <p>9,990</p>
+            <h6>리뷰 : <span class="red">1,384</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img4.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>국내산 100% 천연정화석(제올라이트) 3+1 패키지
+                (반영구 제습/탈취/가습)</h4>
+                <h5>13,900</h5>
+            <p>29,900</p>
+            <h6>리뷰 : <span class="red">1,479</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img5.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>2+1 [국내산] 편백나무원액 100% 피톤치드 편백수 <br>스프레이 500ml
+                (다목적 탈취제)</h4>
+                <h5>22,900</h5>
+            <p>14,900</p>
+            <h6>리뷰 : <span class="red">59</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img6.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>온다숲 천연 옷장 탈취제 방향제 냄새제거 200g </h4>
+            <h5>13,900</h5>
+            <p>4,900</p>
+            <h6>리뷰 : <span class="red">89</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img7.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>국내산 100% 천연정화석(제올라이트) <br>부직포 패키지
+                (반영구 제습/탈취/가습)</h4>
+                <h5>13,900</h5>
+            <p>11,900</p>
+            <h6>리뷰 : <span class="red">58</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img8.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>100% 편백오일 원액</h4>
+            <h5>22,900</h5>
+            <p>14,900 </p>
+            <h6>리뷰 : <span class="red">1,479</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img9.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>국내산 100% 천연정화석(제올라이트)<br> 인테리어 접시 패키지
+                (반영구 제습/탈취/가습)</h4>
+                <h5>13,900</h5>
+            <p>11,900</p>
+            <h6>리뷰 : <span class="red">978</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img10.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>[국내산] 편백나무원액100% 피톤치드<br> 편백수 4L+500ml (다목적 탈취제)</h4>
+            <h5>13,900</h5>
+            <p>59,900</p>
+            <h6>리뷰 : <span class="red">563</span></h6>
+        </div>
+
+
+        <div class="box">
+            <a href="#"><img src="img/img1.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>온다숲 천연 옷장 탈취제 방향제 냄새제거 200g </h4>
+            <h5>22,900</h5>
+            <p>4,900</p>
+            <h6>리뷰 : <span class="red">309</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img11.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>국내산 100% 천연정화석(제올라이트) <br>부직포 패키지
+                (반영구 제습/탈취/가습)</h4>
+                <h5>13,900</h5>
+            <p>11,900</p>
+            <h6>리뷰 : <span class="red">589</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img12.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>100% 편백오일 원액</h4>
+            <h5>13,900</h5>
+            <p>14,900 </p>
+            <h6>리뷰 : <span class="red">59</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img13.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>국내산 100% 천연정화석(제올라이트)<br> 인테리어 접시 패키지
+                (반영구 제습/탈취/가습)</h4>
+                <h5>22,900</h5>
+            <p>11,900</p>
+            <h6>리뷰 : <span class="red">3,489</span></h6>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/img14.jpg" alt="상품이미지"></a>
+            <h3>NEW</h3>
+            <h4>[국내산] 편백나무원액100% 피톤치드<br> 편백수 4L+500ml (다목적 탈취제)</h4>
+            <h5>13,900</h5>
+            <p>59,900</p>
+            <h6>리뷰 : <span class="red">1,589</span></h6>
+        </div>
+
+
+        
+
+        
+
+
+
+    </section>
+
+    <footer>
+        <div class="box">
+            <h1>온다숲 사업자 정보</h1>
+            <h3>
+                <ul>
+                    <li>회사 : (주)아이앤디디</li>
+                    <li>사업자번호 : 840-87-01960</li>
+                    <li>[사업자정보확인]</li>
+                    <li> 통신판매신고번호 : 제2020-서울강북-1048호</li>
+                    <li>전화 : 070-7424-7711</li>
+                    <li>팩스 : 02-2252-5264</li>
+                    <li>이메일 : ondasoop@ondasoop.com</li>
+                    <li>주소 : 서울특별시 강북구 한천로 1071 (수유동) 태양빌딩 5층</li>
+                </ul>
+            </h3>
+            <div class="box1">
+                <h5>CS CENTER<br>
+                    070-7424-7711</h5>
+                <ul>
+                    <li>상담시간 : MON-FRI AM10-PM5</li>
+                    <li>점심시간 : PM12-PM1</li>
+                    <li>주말,공휴일 휴무</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>NOTICE</h5>
+                <ul>
+                    <li>[안내] 100% 환불 규정 안내</li>
+                    <li>[이벤트] 온다숲 네이버페이 이벤트</li>
+                    <li>[자주묻는질문] 온다숲 회원등급</li>
+                    <li>[자주묻는질문] 적립금 소멸</li>
+                    <li>[자주묻는질문] 주문/입금 관련</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>BANK INFO.</h5>
+                <ul>
+                    <li>하나은행 579-910007-50604</li>
+                    <li>(주)아이앤디디</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h5>DELIVERY</h5>
+                <ul>
+                    <li>택배반송주소</li>
+                    <li>서울특별시 노원구 동일로245길 162 <br>(상계동, 은빛1단지아파트)</li>
+                    <li>대한통운 상계은빛점 (주)온다숲</li>
+                    <li>[ 택배사 바로가기 ]</li>
+                </ul>
+            </div>
+            <div id="box">
+                <h1>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+                
+                <div id="b"><a href="#"><img src="img/img_blog.png" alt="블로그 아이콘"></a></div>
+                <div id="f"><a href="#"><img src="img/img_instagram.png" alt="페이스북 아이콘"></a></div>
+                <div id="i"><a href="#"><img src="img/img_facebook.png" alt="인스타 아이콘"></a></div>
+            
+            </div>
+
+
+        </div>
+
+    </footer>
+
+  </body>
+</html>
+
+
